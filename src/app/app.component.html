@@ -1,0 +1,28 @@
+<body class="mat-app-background">
+  <mat-grid-list
+    cols="2"
+    rowHeight="fit"
+    class="main"
+    [gutterSize]="'50px'"
+    role="list"
+  >
+    <mat-grid-tile role="listitem" class="">
+      <mat-grid-tile-header>Products</mat-grid-tile-header>
+      <div class="internalMatGrid">
+        <app-item-list></app-item-list>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile role="" class="articleSection">
+      <div class="internalMatGrid">
+        <mat-grid-list cols="4" rowHeight="10vh">
+          <div>
+            <mat-grid-tile colspan="4" rowspan="1">
+              <h1>Article : <span id="titleArticle"></span></h1>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="4" rowspan="8"> </mat-grid-tile>
+          </div>
+        </mat-grid-list>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</body>
